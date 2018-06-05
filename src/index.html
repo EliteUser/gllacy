@@ -28,7 +28,7 @@
       <nav class="main-navigation page-header__main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a href="catalog.html" class="main-navigation__link">Каталог</a>
+            <a href="catalog.html" class="main-navigation__link main-navigation__link--current">Каталог</a>
 
             <ul class="main-navigation__submenu submenu">
               <li class="submenu__item submenu__item--special">
@@ -127,7 +127,7 @@
 
     <!-- Слайдер -->
 
-    <section class="slider slider--nojs container">
+    <section class="page-main__slider slider slider--nojs container">
       <h2 class="visually-hidden">Самые вкусные мороженки!</h2>
 
       <div class="slider__controls">
@@ -167,7 +167,7 @@
 
     <!-- Промо-блоки -->
 
-    <section class="promo container">
+    <section class="page-main__promo promo container">
       <h2 class="visually-hidden">Наши предложения</h2>
 
       <ul class="promo__list">
@@ -185,6 +185,44 @@
             шоколадной присыпки совершенно бесплатно.
           </p>
           <a href="#" class="button promo__button">Хочу шоколадки!</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Каталог на главной -->
+
+    <section class="page-main__catalog catalog container">
+      <ul class="catalog__list">
+        <li class="catalog__list__item product product--hit">
+          <img class="product__image" src="img/product-1" width="100%" height="100%"
+               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          <b class="product__price">310 &#8381;/кг</b>
+          <a href="#" class="button product__link">Быстрый просмотр</a>
+        </li>
+
+        <li class="catalog__list__item product product--hit">
+          <img class="product__image" src="img/product-2" width="100%" height="100%"
+               alt="Сливочно-кофейное с кусочками шоколада">
+          <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
+          <b class="product__price">380 &#8381;/кг</b>
+          <a href="#" class="button product__link">Быстрый просмотр</a>
+        </li>
+
+        <li class="catalog__list__item product product--hit">
+          <img class="product__image" src="img/product-3" width="100%" height="100%"
+               alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+          <b class="product__price">355 &#8381;/кг</b>
+          <a href="#" class="button product__link">Быстрый просмотр</a>
+        </li>
+
+        <li class="catalog__list__item product product--hit">
+          <img class="product__image" src="img/product-4" width="100%" height="100%"
+               alt="Сливочное крем-брюле с карамельной подливкой">
+          <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
+          <b class="product__price">415 &#8381;/кг</b>
+          <a href="#" class="button product__link">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
