@@ -300,6 +300,7 @@
           <a href="tel:+78124502525" class="telephone contacts__telephone">8 812 450-25-25</a>
           (с 10 до 20 ежедневно)
         </p>
+        <a href="#" class="button contacts__button">Форма обратной связи</a>
       </div>
     </section>
   </main>
@@ -365,6 +366,29 @@
       Сделано в HTML Academy &copy; 2017
     </p>
   </footer>
+
+  <div class="modal" id="form-modal">
+    <section class="modal__inner form-modal">
+      <h2 class="modal__title">Мы обязательно вам ответим!</h2>
+
+      <button class="modal__close" id="form-close" type="button">
+        <span class="visually-hidden">Закрыть форму</span>
+      </button>
+
+      <form class="form-modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <input class="form-modal__input" type="text" name="name" id="form-username"
+               placeholder="Как вас зовут?">
+
+        <input class="form-modal__input" type="email" name="email" id="form-email"
+               placeholder="Ваша почта для ответа?">
+
+        <textarea class="form-modal__input form-modal__input--big" name="message" id="form-message"
+                  placeholder="Напишите что-нибудь"></textarea>
+
+        <button class="button form-modal__submit" type="submit">Отправить</button>
+      </form>
+    </section>
+  </div>
 
   <script src="js/main.min.js"></script>
 </body>
