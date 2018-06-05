@@ -181,7 +181,129 @@
 
   <!-- Основная часть -->
 
-  <main class="catalog-main">
+  <main class="catalog-main container">
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">Сливочное</a>
+      </li>
+    </ul>
+
+    <h1 class="catalog-main__title">Сливочное мороженое</h1>
+
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+
+      <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
+        <article class="sort">
+          <label class="sort__label" for="sort">Сортировка:</label>
+
+          <select class="sort__select" name="sortby" id="sort">
+            <option class="sort__option" value="popular">по популярности</option>
+            <option class="sort__option" value="price-min">сначала недорогие</option>
+            <option class="sort__option" value="price-max">сначала дорогие</option>
+            <option class="sort__option" value="fat">по жирности</option>
+          </select>
+        </article>
+
+        <div class="range-slider filter__range-slider">
+          <p class="range-slider__price">
+            <label for="price-min">100 руб. </label>-
+            <label for="price-max">500 руб.</label>
+          </p>
+
+          <div class="range-slider__wrapper">
+            <div class="range-slider__inner" id="range-slider">
+              <div class="range-slider__control range-slider__control--left"></div>
+              <div class="range-slider__control range-slider__control--right"></div>
+              <div class="range-slider__selected"></div>
+            </div>
+          </div>
+
+          <div class="range-slider__inputs">
+            <input class="range-slider__input visually-hidden" type="number" name="min" id="price-min">
+            <input class="range-slider__input visually-hidden" type="number" name="max" id="price-max">
+          </div>
+        </div>
+
+        <fieldset class="filter__fieldset">
+          <legend class="filter__category filter__category--legend">Жирность:</legend>
+
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-0"
+                     value="0">
+              <label class="filter__label" for="percent-0">0%</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-10"
+                     value="10" checked>
+              <label class="filter__label" for="percent-10">до 10%</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-30"
+                     value="30" checked>
+              <label class="filter__label" for="percent-30">до 30%</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-more-30"
+                     value="over" checked>
+              <label class="filter__label" for="percent-more-30">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter__fieldset">
+          <legend class="filter__category filter__category--legend">Наполнители:</legend>
+
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="filter__checkbox visually-hidden" type="checkbox" name="chocolate" id="filter-chocolate"
+                     checked>
+              <label class="filter__label" for="filter-chocolate">шоколадные</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__checkbox visually-hidden" type="checkbox" name="sugar"
+                     id="filter-sugar" checked>
+              <label class="filter__label" for="filter-sugar">cахарные присыпки</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__checkbox visually-hidden" type="checkbox" name="fruit" id="filter-fruit">
+              <label class="filter__label" for="filter-fruit">фрукты</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__checkbox visually-hidden" type="checkbox" name="syrup" id="filter-syrup">
+              <label class="filter__label" for="filter-syrup">сиропы</label>
+            </li>
+
+            <li class="filter__item">
+              <input class="filter__checkbox visually-hidden" type="checkbox" name="jam" id="filter-jam">
+              <label class="filter__label" for="filter-jam">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="button filter__button">Применить</button>
+
+
+      </form>
+
+
+    </section>
 
   </main>
 
