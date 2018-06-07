@@ -1,0 +1,27 @@
+.input {
+  width: 100%;
+  padding: 9px 14px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $text;
+  background-color: $text-light;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px $border;
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-placeholder;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px $border-hover;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $border-active;
+  }
+}

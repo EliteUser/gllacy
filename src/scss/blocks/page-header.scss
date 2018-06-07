@@ -1,0 +1,23 @@
+.page-header {
+
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.page-header__logo {
+  flex-shrink: 0;
+  margin-top: 3px;
+  margin-right: 9px;
+}
+
+.page-header__main-navigation {
+  margin-right: auto;
+}
+
+.page-header__search {
+  margin-right: 10px;
+}

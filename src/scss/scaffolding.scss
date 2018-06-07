@@ -11,6 +11,10 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: $text-light;
+  background-color: $background-green;
 }
 
 img {
@@ -19,6 +23,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .visually-hidden {
@@ -34,7 +39,12 @@ a {
   overflow: hidden;
 }
 
-.container {
-  width: 900px;
+.wrapper {
+  min-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.container {
+  padding: 0 2.3%;
 }

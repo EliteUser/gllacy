@@ -1,0 +1,86 @@
+.cart {
+  width: 540px;
+  padding: 20px 15px;
+  color: $text;
+  background-color: $background-light;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cart__table {
+  width: 510px;
+  border-collapse: collapse;
+}
+
+.cart__row {
+  margin-bottom: 10px;
+}
+
+.cart__cell {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cart__cell-1 {
+  padding-top: 9px;
+  width: 27px;
+}
+
+.cart__cell-2 {
+  width: 33px;
+}
+
+.cart__cell-3 {
+  padding: 8px 11px 20px;
+  width: 250px;
+}
+
+.cart__cell-4 {
+  padding: 8px 8px 20px;
+  width: 120px;
+}
+
+.cart__cell-5 {
+  padding: 8px 11px 20px;
+  width: 80px;
+}
+
+.cart__delete {
+  display: block;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  background: url("../img/x-icon.svg") no-repeat;
+}
+
+.cart__thumb {
+  display: block;
+  width: 33px;
+  height: 33px;
+}
+
+.cart__item {
+  margin-bottom: 10px;
+}
+
+.cart__unit-price {
+  color: $text-placeholder;
+}
+
+.cart__fullprice {
+  padding: 15px 0;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: right;
+  border-top: 1px solid $border;
+}
+
+.cart__button {
+  margin-left: auto;
+  width: 170px;
+}
