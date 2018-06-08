@@ -1,0 +1,58 @@
+.slider {
+  position: relative;
+}
+
+.slider--nojs {
+  .slider__controls {
+    display: none;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  z-index: 1;
+  display: flex;
+}
+
+.slider__dot {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 2px solid $text-light;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:active {
+    background-color: $text-light;
+  }
+}
+
+.slider__dot--active {
+  background-color: $text-light;
+}
+
+.slider__slide-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__slide {
+  display: none;
+  width: 100%;
+}
+
+.slider__slide--show {
+  display: block;
+}

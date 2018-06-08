@@ -1,0 +1,45 @@
+.promo__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  width: 48.8%;
+  min-height: 229px;
+  padding: 15px 19px 24px;
+  border-radius: 15px;
+}
+
+.promo__item--raspberry {
+  background: $raspberry-bg url("../img/raspberry.jpg") no-repeat center;
+}
+
+.promo__item--chocolate {
+  background: $chocolate-bg url("../img/chocolate.jpg") no-repeat center;
+}
+
+.promo__slogan {
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.promo__description {
+  margin: 0 0 auto;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.promo__button {
+  align-self: flex-end;
+  padding-left: 22px;
+  padding-right: 22px;
+}

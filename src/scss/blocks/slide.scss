@@ -1,0 +1,37 @@
+.slide {
+  position: relative;
+  padding-top: 274px;
+}
+
+.slide__image {
+  position: absolute;
+  top: -116px;
+  left: 45px;
+  z-index: -1;
+  min-width: 1060px;
+}
+
+.slide__title {
+  margin: 0 0 32px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slide__link {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media screen and (max-width: 1200px) {
+  .slide__image {
+    left: calc(45px - calc(573px - 47.7vw)); // magic
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slide__image {
+    left: -99px;
+  }
+}
