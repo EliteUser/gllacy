@@ -1,0 +1,35 @@
+.blog {
+  width: 48.8%;
+  min-height: 220px;
+  padding: 25px 20px 0;
+  color: $text-gray;
+  border-radius: 15px;
+}
+
+.blog--1 {
+  background: $text-light url("../img/strawberry.jpg") no-repeat right 0;
+}
+
+.blog__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.blog__link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    color: $link-dark;
+  }
+
+  &:active {
+    color: $link-dark;
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,43 @@
+.news {
+  display: flex;
+  width: 48.8%;
+  min-height: 220px;
+  padding: 5px;
+  background-image: linear-gradient(to right bottom, $background-light 12.5%, $border-gradient-blue 12.5%, $border-gradient-blue 25%, $background-light 25%, $background-light 37.5%, $border-gradient-red 37.5%, $border-gradient-red 50%, $background-light 50%, $background-light 62.5%, $border-gradient-blue 62.5%, $border-gradient-blue 75%, $background-light 75%, $background-light 87.5%, $border-gradient-red 87.5%, $border-gradient-red 100%);
+  background-size: 40px 40px;
+  border-radius: 15px;
+}
+
+.news__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 21px 35px 21px;
+  background-color: $background-light;
+  border-radius: 10px;
+}
+
+.news__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-gray;
+}
+
+.news__form {
+  display: flex;
+}
+
+.news__input {
+  margin-right: 11px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.news__button {
+  width: 129px;
+  flex-shrink: 0;
+}
