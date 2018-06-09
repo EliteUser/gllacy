@@ -1,0 +1,44 @@
+.about {
+  padding: 25px 20px 14px;
+  color: $text;
+  background: $wafer-bg url("../img/wafer.jpg");
+  border-radius: 15px;
+}
+
+.about__title {
+  margin: 0 0 9px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.about__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about__description {
+  margin: 0;
+  padding: 12px 0 10px 56px;
+  width: 48.8%;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__description--1 {
+  background: url("../../img/icecream.svg") no-repeat 0 0;
+}
+
+.about__description--2 {
+  background: url("../../img/leaf.svg") no-repeat 0 0;
+}
+
+.about__description--3 {
+  background: url("../../img/cow.svg") no-repeat 0 0;
+}
+
+.about__description--4 {
+  background: url("../../img/thermometer.svg") no-repeat 0 0;
+}
+
