@@ -1,0 +1,14 @@
+.developer {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.developer__link {
+  @include textUnderline($background-opacity);
+  @include linkLight();
+}
+
+.developer__logo {
+  display: block;
+  margin-bottom: 5px;
+}

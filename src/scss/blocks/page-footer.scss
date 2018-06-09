@@ -1,0 +1,49 @@
+.page-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__social {
+  margin: 36px 0 0;
+}
+
+.page-footer__list {
+  margin: 34px auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.page-footer__item {
+  width: 142px;
+}
+
+.page-footer__link {
+  @include textUnderline($background-opacity);
+  @include linkLight();
+
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.page-footer__link--special {
+  position: relative;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-50%);
+    content: "";
+    width: 15px;
+    height: 13px;
+    background: url("../img/heart.svg");
+  }
+}
+
+.page-footer__developer {
+  margin: 20px 0 0;
+}
