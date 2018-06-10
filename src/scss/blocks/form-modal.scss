@@ -1,0 +1,54 @@
+.form-modal {
+  width: 477px;
+  padding: 15px 25px 30px;
+  background-color: $background-light;
+  border-radius: 10px;
+}
+
+.form-modal--invalid {
+  animation-name: form-invalid;
+  animation-duration: 100ms;
+  animation-iteration-count: 5;
+}
+
+@keyframes form-invalid {
+  33% {
+    transform: translateX(-10px);
+  }
+
+  66% {
+    transform: translateX(10px);
+  }
+}
+
+.form-modal__title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $text;
+}
+
+.form-modal__input {
+  width: 265px;
+  margin-bottom: 22px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.form-modal__input--big {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  min-height: 153px;
+  resize: none;
+}
+
+.form-modal__submit {
+  margin-left: auto;
+  width: 140px;
+}
+
