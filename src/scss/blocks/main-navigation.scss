@@ -11,20 +11,36 @@
   padding: 7px 14px;
 
   &:hover,
-  &:focus,
-  &:focus-within {
+  &:focus {
     color: $text;
     background-color: $background-light;
     border-radius: 16px;
 
     .main-navigation__submenu {
-      transform: scale(1);
+      opacity: 1;
+      z-index: 1;
     }
 
     .main-navigation__link {
       outline: none;
       box-shadow: none;
     }
+  }
+}
+
+.main-navigation__item:focus-within {
+  color: $text;
+  background-color: $background-light;
+  border-radius: 16px;
+
+  .main-navigation__submenu {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .main-navigation__link {
+    outline: none;
+    box-shadow: none;
   }
 }
 

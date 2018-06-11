@@ -2,12 +2,17 @@
   position: relative;
 
   &:hover,
-  &:focus,
-  &:focus-within {
+  &:focus {
     .search__wrapper {
-      transform: scale(1);
+      opacity: 1;
+      z-index: 1;
     }
   }
+}
+
+.search:focus-within .search__wrapper {
+  opacity: 1;
+  z-index: 1;
 }
 
 .search__icon {
