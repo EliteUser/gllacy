@@ -1,0 +1,53 @@
+.sort__label {
+  display: block;
+  margin: 0 0 6px 16px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.sort__box {
+  position: relative;
+}
+
+.sort__icon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  z-index: 1;
+  fill: $text-light;
+}
+
+.sort__select {
+  display: block;
+  padding: 10px 34px 9px 14px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $text-light;
+  background-color: $background-opacity;
+  border: none;
+  border-radius: 18.5px;
+
+  appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  cursor: pointer;
+
+  &:hover {
+    color: $text;
+
+    & + .sort__icon {
+      fill: $text;
+    }
+  }
+}
+
+.sort__option {
+  color: $text;
+}

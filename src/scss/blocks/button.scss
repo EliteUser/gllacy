@@ -54,3 +54,24 @@
     border-radius: 32px;
   }
 }
+
+.button--light {
+  padding: 9px 19px 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background: $background-opacity;
+  box-shadow: inset 0 0 0 2px $text-light;
+
+  &:hover {
+    color: $text;
+    background-color: $text-light;
+    box-shadow: inset 0 0 0 2px $text-light;
+  }
+
+  &:active {
+    color: $text;
+    background: #ededed;
+    box-shadow: inset 0 2px 1px 0 #696969;
+  }
+}

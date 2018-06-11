@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  margin-right: 21px;
+}
+
+.breadcrumbs__link {
+  &[href] {
+    @include textUnderline($background-opacity);
+    @include linkLight();
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 1px;
+      right: -14px;
+      content: "\00BB";
+    }
+
+    &:hover,
+    &:active {
+      &::after {
+        color: $text-light;
+      }
+    }
+  }
+
+  font-size: 14px;
+  line-height: 16px;
+}

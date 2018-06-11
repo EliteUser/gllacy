@@ -1,5 +1,7 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   padding: 0;
   list-style: none;
 }

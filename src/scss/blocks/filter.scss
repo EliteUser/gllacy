@@ -1,0 +1,123 @@
+.filter__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.filter__sort {
+  margin: 0 14px 15px 0;
+}
+
+.filter__range-slider {
+  margin: 0 14px 15px 0;
+}
+
+.filter__fieldset {
+  margin: 0 0 15px;
+  padding: 0;
+  border: none;
+}
+
+.filter__category {
+  margin: 0 0 6px 16px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter__list {
+  display: flex;
+  margin: 0;
+  padding: 10px 16px 9px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: $background-opacity;
+  border-radius: 18.5px;
+}
+
+.filter__item:not(:last-child) {
+  .filter__label {
+    margin-right: 20px;
+  }
+}
+
+.filter__label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.filter__radio {
+  & + .filter__label::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url("../img/radio-off.svg") no-repeat left;
+    background-size: 22px 22px;
+    opacity: 0.8;
+  }
+
+  &:not(:disabled) + .filter__label:hover::before {
+    opacity: 1;
+  }
+
+  &:checked + .filter__label::before {
+    background: url("../img/radio-on.svg") no-repeat left;
+    background-size: 22px 22px;
+  }
+
+  &:disabled + .filter__label {
+    opacity: 0.4;
+    cursor: auto;
+  }
+
+  &:focus + .filter__label {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+.filter__checkbox {
+  & + .filter__label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 23px;
+    height: 20px;
+    background: url("../img/checkbox-off.svg") no-repeat left;
+    background-size: 20px 20px;
+    opacity: 0.8;
+  }
+
+  &:not(:disabled) + .filter__label:hover::before {
+    opacity: 1;
+  }
+
+  &:checked + .filter__label::before {
+    background: url("../img/checkbox-on.svg") no-repeat left;
+    background-size: 23px 20px;
+  }
+
+  &:disabled + .filter__label {
+    opacity: 0.4;
+    cursor: auto;
+  }
+
+  &:focus + .filter__label {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+.filter__button {
+  margin: 21px 0 0 14px;
+  width: 144px;
+}
+
+

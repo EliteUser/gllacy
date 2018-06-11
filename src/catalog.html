@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page-inner">
   <div class="wrapper">
 
     <div style="display: none;">
@@ -181,7 +181,7 @@
 
       <!-- Телефон -->
 
-      <p class="telephone page-header__telephone">
+      <p class="telephone catalog-main__telephone">
         <span class="telephone__time">С 10 до 20, ежедневно</span>
         <a href="tel:+78124502525" class="telephone page-header__telephone">8 812 450-25-25</a>
       </p>
@@ -189,134 +189,143 @@
 
     <!-- Основная часть -->
 
-    <main class="catalog-main container">
+    <main class="catalog-main">
+      <div class="container">
 
-      <!-- Навигация -->
+        <!-- Навигация -->
 
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="index.html" class="breadcrumbs__link">Главная</a>
-        </li>
+        <ul class="breadcrumbs catalog-main__breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+          </li>
 
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Каталог</a>
-        </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Каталог</a>
+          </li>
 
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link breadcrumbs__link--current">Сливочное</a>
-        </li>
-      </ul>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current">Сливочное</a>
+          </li>
+        </ul>
 
-      <!-- Заголовок -->
+        <!-- Заголовок -->
 
-      <h1 class="catalog-main__title">Сливочное мороженое</h1>
+        <h1 class="catalog-main__title">Сливочное мороженое</h1>
 
-      <!-- Фильтр -->
+        <!-- Фильтр -->
 
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <section class="filter catalog-main__filter">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
 
-        <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
-          <article class="sort">
-            <label class="sort__label" for="sort">Сортировка:</label>
+          <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
+            <article class="sort filter__sort">
+              <label class="sort__label" for="sort">Сортировка:</label>
 
-            <select class="sort__select" name="sortby" id="sort">
-              <svg class="sort__icon" width="11" height="10">
-                <use xlink:href="#icon-down-dir"></use>
-              </svg>
-              <option class="sort__option" value="popular">по популярности</option>
-              <option class="sort__option" value="price-min">сначала недорогие</option>
-              <option class="sort__option" value="price-max">сначала дорогие</option>
-              <option class="sort__option" value="fat">по жирности</option>
-            </select>
-          </article>
+              <div class="sort__box">
+                <select class="sort__select" name="sortby" id="sort">
+                  <option class="sort__option" value="popular">по популярности</option>
+                  <option class="sort__option" value="price-min">сначала недорогие</option>
+                  <option class="sort__option" value="price-max">сначала дорогие</option>
+                  <option class="sort__option" value="fat">по жирности</option>
+                </select>
 
-          <div class="range-slider filter__range-slider">
-            <p class="range-slider__price">
-              <label for="price-min">100 руб. </label>-
-              <label for="price-max">500 руб.</label>
-            </p>
+                <svg class="sort__icon" width="11" height="10">
+                  <use xlink:href="#icon-down-dir"></use>
+                </svg>
+              </div>
 
-            <div class="range-slider__wrapper">
-              <div class="range-slider__inner" id="range-slider">
-                <div class="range-slider__control range-slider__control--left"></div>
-                <div class="range-slider__control range-slider__control--right"></div>
-                <div class="range-slider__selected"></div>
+            </article>
+
+            <div class="range-slider filter__range-slider">
+              <p class="range-slider__price">Цена:
+                <label for="price-min">100 руб. </label>&ndash;
+                <label for="price-max">500 руб.</label>
+              </p>
+
+              <div class="range-slider__wrapper">
+                <div class="range-slider__inner" id="range-slider">
+                  <div class="range-slider__control range-slider__control--left"></div>
+                  <div class="range-slider__control range-slider__control--right"></div>
+                  <div class="range-slider__selected"></div>
+                </div>
+              </div>
+
+              <div class="range-slider__inputs">
+                <input class="range-slider__input visually-hidden" type="number" name="min" id="price-min"
+                       tabindex="-1" value="100">
+                <input class="range-slider__input visually-hidden" type="number" name="max" id="price-max"
+                       tabindex="-1" value="500">
               </div>
             </div>
 
-            <div class="range-slider__inputs">
-              <input class="range-slider__input visually-hidden" type="number" name="min" id="price-min">
-              <input class="range-slider__input visually-hidden" type="number" name="max" id="price-max">
-            </div>
-          </div>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__category">Жирность:</legend>
 
-          <fieldset class="filter__fieldset">
-            <legend class="filter__category filter__category--legend">Жирность:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-0"
+                         value="0">
+                  <label class="filter__label" for="percent-0">0%</label>
+                </li>
 
-            <ul class="filter__list">
-              <li class="filter__item">
-                <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-0"
-                       value="0">
-                <label class="filter__label" for="percent-0">0%</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-10"
+                         value="10" checked>
+                  <label class="filter__label" for="percent-10">до 10%</label>
+                </li>
 
-              <li class="filter__item">
-                <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-10"
-                       value="10" checked>
-                <label class="filter__label" for="percent-10">до 10%</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-30"
+                         value="30" checked>
+                  <label class="filter__label" for="percent-30">до 30%</label>
+                </li>
 
-              <li class="filter__item">
-                <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-30"
-                       value="30" checked>
-                <label class="filter__label" for="percent-30">до 30%</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-more-30"
+                         value="over" checked>
+                  <label class="filter__label" for="percent-more-30">выше 30%</label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <li class="filter__item">
-                <input class="filter__radio visually-hidden" type="radio" name="fat" id="percent-more-30"
-                       value="over" checked>
-                <label class="filter__label" for="percent-more-30">выше 30%</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__category">Наполнители:</legend>
 
-          <fieldset class="filter__fieldset">
-            <legend class="filter__category filter__category--legend">Наполнители:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="chocolate" id="filter-chocolate"
+                         checked>
+                  <label class="filter__label" for="filter-chocolate">шоколадные</label>
+                </li>
 
-            <ul class="filter__list">
-              <li class="filter__item">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="chocolate" id="filter-chocolate"
-                       checked>
-                <label class="filter__label" for="filter-chocolate">шоколадные</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="sugar"
+                         id="filter-sugar" checked>
+                  <label class="filter__label" for="filter-sugar">cахарные присыпки</label>
+                </li>
 
-              <li class="filter__item">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="sugar"
-                       id="filter-sugar" checked>
-                <label class="filter__label" for="filter-sugar">cахарные присыпки</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="fruit" id="filter-fruit">
+                  <label class="filter__label" for="filter-fruit">фрукты</label>
+                </li>
 
-              <li class="filter__item">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="fruit" id="filter-fruit">
-                <label class="filter__label" for="filter-fruit">фрукты</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="syrup" id="filter-syrup">
+                  <label class="filter__label" for="filter-syrup">сиропы</label>
+                </li>
 
-              <li class="filter__item">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="syrup" id="filter-syrup">
-                <label class="filter__label" for="filter-syrup">сиропы</label>
-              </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="jam" id="filter-jam">
+                  <label class="filter__label" for="filter-jam">джемы</label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <li class="filter__item">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="jam" id="filter-jam">
-                <label class="filter__label" for="filter-jam">джемы</label>
-              </li>
-            </ul>
-          </fieldset>
+            <button class="button button--light filter__button" type="submit">Применить</button>
+          </form>
+        </section>
+      </div>
 
-          <button class="button filter__button" type="submit">Применить</button>
-        </form>
-      </section>
 
       <!-- Карточки товаров -->
 
@@ -530,12 +539,13 @@
         </ul>
       </section>
 
-      <article class="pagination catalog-main__pagination">
+
+      <article class="pagination catalog-main__pagination container">
         <ul class="pagination__list">
-          <li class="pagination__item pagination__item--inactive">
-            <a href="#" class="pagination__link pagination__link--prev">
-              <svg class="pagination__icon" width="8" height="12">
-                <use xlink:href="#icon-prev"></use>
+          <li class="pagination__item pagination__arrow pagination__arrow--prev">
+            <a class="pagination__link pagination__link--inactive">
+              <svg class="pagination__icon pagination__icon--prev" width="8" height="12">
+                <use xlink:href="#icon-arrow"></use>
               </svg>
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
@@ -561,10 +571,10 @@
             <a href="#" class="pagination__link">5</a>
           </li>
 
-          <li class="pagination__item">
-            <a href="#" class="pagination__link pagination__link--next">
+          <li class="pagination__item pagination__arrow pagination__arrow--next">
+            <a href="#" class="pagination__link">
               <svg class="pagination__icon" width="8" height="12">
-                <use xlink:href="#icon-next"></use>
+                <use xlink:href="#icon-arrow"></use>
               </svg>
               <span class="visually-hidden">Следующая страница</span>
             </a>
