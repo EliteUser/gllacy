@@ -1,9 +1,11 @@
 .search {
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within {
     .search__wrapper {
-      visibility: visible;
+      transform: scale(1);
     }
   }
 }

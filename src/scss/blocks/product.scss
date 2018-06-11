@@ -4,7 +4,7 @@
 
   &:hover {
     .product__hover {
-      visibility: visible;
+      transform: scale(1);
     }
   }
 }
@@ -62,11 +62,11 @@
 }
 
 .product__hover {
-  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(0);
   display: flex;
   justify-content: center;
   height: 120%;
@@ -75,6 +75,10 @@
   background-color: $background-opacity;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.product__hover--show {
+  transform: scale(1);
 }
 
 .product__link {

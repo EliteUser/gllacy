@@ -12,12 +12,21 @@
 
 .contacts__map {
   position: relative;
+  z-index: 1;
   display: block;
   opacity: 0;
 }
 
+.contacts__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
 .contacts__block {
   position: absolute;
+  z-index: 3;
   top: 50%;
   right: 2.3%;
   transform: translateY(-50%);

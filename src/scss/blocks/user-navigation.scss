@@ -54,10 +54,14 @@
   fill: $text-light;
 }
 
-.user-navigation__item--login:hover .user-navigation__form {
-  visibility: visible;
+.user-navigation__item--login:hover .user-navigation__form,
+.user-navigation__item--login:focus .user-navigation__form,
+.user-navigation__item--login:focus-within .user-navigation__form {
+  transform: scale(1);
 }
 
-.user-navigation__item--cart:hover .user-navigation__cart {
-  visibility: visible;
+.user-navigation__item--cart:hover .user-navigation__cart,
+.user-navigation__item--cart:focus .user-navigation__cart,
+.user-navigation__item--cart:focus-within .user-navigation__cart {
+  transform: scale(1);
 }
