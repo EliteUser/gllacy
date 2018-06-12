@@ -97,8 +97,10 @@
             <!-- Форма входа -->
 
             <form class="user-navigation__form login popup-menu popup-menu--right" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="user-email">Электронная почта</label>
               <input class="input login__input" type="email" id="user-email" name="email"
                      placeholder="Электронная почта">
+              <label class="visually-hidden" for="user-password">Пароль</label>
               <input class="input login__input" type="password" id="user-password" name="password" placeholder="Пароль">
 
               <div class="login__wrapper">
@@ -135,6 +137,7 @@
     <main class="page-main">
 
       <!-- Слайдер -->
+
       <div class="container">
         <section class="page-main__slider slider slider--nojs ">
           <h2 class="visually-hidden">Самые вкусные мороженки!</h2>
@@ -339,6 +342,7 @@
               и&nbsp;не&nbsp;слать
               всякой ненужной ерунды. Честно =)</p>
             <form class="news__form" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="news-email">Электронная почта</label>
               <input class="input news__input" type="email" id="news-email" name="news_email"
                      placeholder="Электронная почта">
               <button class="button news__button" type="submit">Отправить</button>
@@ -353,9 +357,9 @@
         <div class="contacts__wrapper">
           <img class="contacts__map" src="img/map.jpg" width="1200" height="430"
                alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <iframe class="contacts__frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601209750552!2d30.321667092381855!3d59.93875924864614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1528719385713"
-            width="1200" height="430" allowfullscreen>
+          <iframe class="contacts__frame" title="Наш офис на карте"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601209750552!2d30.321667092381855!3d59.93875924864614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1528719385713"
+                  width="1200" height="430" allowfullscreen>
           </iframe>
         </div>
 
@@ -445,12 +449,15 @@
         </button>
 
         <form class="form-modal__form" method="post" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="form-username">Ваше имя</label>
           <input class="input form-modal__input" type="text" name="name" id="form-username"
                  placeholder="Как вас зовут?">
 
+          <label class="visually-hidden" for="form-email">Ваша электронная почта</label>
           <input class="input form-modal__input" type="email" name="email" id="form-email"
                  placeholder="Ваша почта для ответа?">
 
+          <label class="visually-hidden" for="form-message">Сообщение</label>
           <textarea class="input form-modal__input form-modal__input--big" name="message" id="form-message"
                     placeholder="Напишите что-нибудь"></textarea>
 

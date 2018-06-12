@@ -96,8 +96,10 @@
             <!-- Форма входа -->
 
             <form class="user-navigation__form login popup-menu popup-menu--right" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="user-email">Электронная почта</label>
               <input class="input login__input" type="email" id="user-email" name="email"
                      placeholder="Электронная почта">
+              <label class="visually-hidden" for="user-password">Пароль</label>
               <input class="input login__input" type="password" id="user-password" name="password" placeholder="Пароль">
 
               <div class="login__wrapper">
@@ -222,6 +224,7 @@
 
           <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
             <article class="sort filter__sort">
+              <h2 class="visually-hidden">Сортировка</h2>
               <label class="sort__label" for="sort">Сортировка:</label>
 
               <div class="sort__box">
@@ -254,8 +257,11 @@
               </div>
 
               <div class="range-slider__inputs">
+                <label class="visually-hidden" for="price-min">Цена от</label>
                 <input class="range-slider__input visually-hidden" type="number" name="min" id="price-min"
                        tabindex="-1" value="100">
+
+                <label class="visually-hidden" for="price-max">Цена до</label>
                 <input class="range-slider__input visually-hidden" type="number" name="max" id="price-max"
                        tabindex="-1" value="500">
               </div>
@@ -544,6 +550,8 @@
 
 
       <article class="pagination catalog-main__pagination container">
+        <h2 class="visually-hidden">Переключатель страниц</h2>
+
         <ul class="pagination__list">
           <li class="pagination__item pagination__arrow pagination__arrow--prev">
             <a class="pagination__link pagination__link--inactive">
